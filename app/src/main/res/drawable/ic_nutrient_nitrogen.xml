@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Nitrogen deficiency icon — orange/yellow leaf -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="#F57C00"
+        android:pathData="M24,4 C24,4 12,14 12,26 C12,35 17,40 24,42 C31,40 36,35 36,26 C36,14 24,4 24,4 Z" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M24,10 L24,38" />
+    <text android:x="17" android:y="28"
+        android:fillColor="#FFFFFF"
+        android:textSize="10sp">N</text>
+</vector>

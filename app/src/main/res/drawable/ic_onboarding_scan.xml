@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Onboarding illustration: leaf scan -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="220dp"
+    android:height="220dp"
+    android:viewportWidth="220"
+    android:viewportHeight="220">
+    <path android:fillColor="#E8F5E9"
+        android:pathData="M110,20 C110,20 55,60 55,110 C55,155 80,178 110,185 C140,178 165,155 165,110 C165,60 110,20 110,20Z" />
+    <path android:strokeColor="#2E7D32" android:strokeWidth="3"
+        android:pathData="M110,35 L110,175 M85,90 C85,90 75,120 85,150 M135,90 C135,90 145,120 135,150" />
+    <rect android:fillColor="#00000000" android:strokeColor="#4CAF50" android:strokeWidth="3"
+        android:x="30" android:y="30" android:width="160" android:height="160"
+        android:rx="8" />
+</vector>

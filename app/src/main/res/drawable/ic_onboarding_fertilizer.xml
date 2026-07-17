@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Onboarding illustration: fertilizer bag -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="220dp"
+    android:height="220dp"
+    android:viewportWidth="220"
+    android:viewportHeight="220">
+    <path android:fillColor="#F1F8E9"
+        android:pathData="M70,50 L150,50 L165,170 L55,170 Z" />
+    <path android:fillColor="#2E7D32"
+        android:pathData="M65,50 L155,50 L155,80 L65,80 Z" />
+    <path android:fillColor="#FFFFFF" android:strokeColor="#FFFFFF" android:strokeWidth="1"
+        android:pathData="M80,90 L140,90 M80,105 L140,105 M80,120 L120,120" />
+    <path android:fillColor="#4CAF50"
+        android:pathData="M95,40 L125,40 L130,55 L90,55 Z" />
+</vector>

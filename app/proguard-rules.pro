@@ -1,0 +1,4 @@
+-keep class org.tensorflow.** { *; }
+-keepclassmembers class org.tensorflow.** { *; }
+-keep class com.jp.pechaydetect.ml.** { *; }
+-keep class com.jp.pechaydetect.data.model.** { *; }
