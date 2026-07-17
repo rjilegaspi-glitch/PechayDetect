@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pechay leaf logo -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,12 C54,12 30,28 30,50 C30,68 42,76 54,80 C66,76 78,68 78,50 C78,28 54,12 54,12 Z" />
+    <path
+        android:fillColor="#A5D6A7"
+        android:pathData="M54,18 L54,78 M44,30 C44,30 40,45 44,58 M64,30 C64,30 68,45 64,58" />
+</vector>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Onboarding illustration: scan history list -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="220dp"
+    android:height="220dp"
+    android:viewportWidth="220"
+    android:viewportHeight="220">
+    <rect android:fillColor="#E8F5E9" android:x="30" android:y="40"
+        android:width="160" android:height="140" android:rx="12" />
+    <rect android:fillColor="#FFFFFF" android:x="44" android:y="60"
+        android:width="132" android:height="28" android:rx="6" />
+    <rect android:fillColor="#FFFFFF" android:x="44" android:y="98"
+        android:width="132" android:height="28" android:rx="6" />
+    <rect android:fillColor="#FFFFFF" android:x="44" android:y="136"
+        android:width="132" android:height="28" android:rx="6" />
+    <rect android:fillColor="#2E7D32" android:x="44" android:y="60"
+        android:width="8" android:height="28" android:rx="4" />
+    <rect android:fillColor="#F57C00" android:x="44" android:y="98"
+        android:width="8" android:height="28" android:rx="4" />
+    <rect android:fillColor="#7B1FA2" android:x="44" android:y="136"
+        android:width="8" android:height="28" android:rx="4" />
+</vector>

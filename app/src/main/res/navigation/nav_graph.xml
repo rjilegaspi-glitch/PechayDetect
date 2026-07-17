@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!-- Home Dashboard -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.jp.pechaydetect.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- Camera Screen -->
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.jp.pechaydetect.ui.camera.CameraFragment"
+        android:label="Scan Leaf"
+        tools:layout="@layout/fragment_camera">
+        <action
+            android:id="@+id/action_cameraFragment_to_imagePreviewFragment"
+            app:destination="@id/imagePreviewFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+
+    <!-- Image Preview -->
+    <fragment
+        android:id="@+id/imagePreviewFragment"
+        android:name="com.jp.pechaydetect.ui.preview.ImagePreviewFragment"
+        android:label="Preview"
+        tools:layout="@layout/fragment_image_preview">
+        <argument
+            android:name="imageUri"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_imagePreviewFragment_to_analysisFragment"
+            app:destination="@id/analysisFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/imagePreviewFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- AI Analysis (loading) -->
+    <fragment
+        android:id="@+id/analysisFragment"
+        android:name="com.jp.pechaydetect.ui.analysis.AnalysisFragment"
+        android:label="Analyzing…"
+        tools:layout="@layout/fragment_analysis">
+        <argument
+            android:name="imageUri"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_analysisFragment_to_diagnosisResultFragment"
+            app:destination="@id/diagnosisResultFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/cameraFragment" />
+    </fragment>
+
+    <!-- Diagnosis Result -->
+    <fragment
+        android:id="@+id/diagnosisResultFragment"
+        android:name="com.jp.pechaydetect.ui.result.DiagnosisResultFragment"
+        android:label="Diagnosis Result"
+        tools:layout="@layout/fragment_diagnosis_result">
+        <argument
+            android:name="scanId"
+            app:argType="long" />
+        <argument
+            android:name="imageUri"
+            app:argType="string" />
+        <argument
+            android:name="predictedClass"
+            app:argType="string" />
+        <argument
+            android:name="confidence"
+            app:argType="float" />
+        <argument
+            android:name="isConfident"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_diagnosisResultFragment_to_fertilizerFragment"
+            app:destination="@id/fertilizerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_diagnosisResultFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+
+    <!-- Fertilizer Recommender -->
+    <fragment
+        android:id="@+id/fertilizerFragment"
+        android:name="com.jp.pechaydetect.ui.fertilizer.FertilizerFragment"
+        android:label="Fertilizer Recommendations"
+        tools:layout="@layout/fragment_fertilizer">
+        <argument
+            android:name="deficiencyClass"
+            app:argType="string" />
+    </fragment>
+
+    <!-- Nutrient Library -->
+    <fragment
+        android:id="@+id/nutrientLibraryFragment"
+        android:name="com.jp.pechaydetect.ui.library.NutrientLibraryFragment"
+        android:label="Nutrient Library"
+        tools:layout="@layout/fragment_nutrient_library" />
+
+    <!-- Scan History -->
+    <fragment
+        android:id="@+id/scanHistoryFragment"
+        android:name="com.jp.pechaydetect.ui.history.ScanHistoryFragment"
+        android:label="Scan History"
+        tools:layout="@layout/fragment_scan_history">
+        <action
+            android:id="@+id/action_scanHistoryFragment_to_scanDetailFragment"
+            app:destination="@id/scanDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- Scan Detail -->
+    <fragment
+        android:id="@+id/scanDetailFragment"
+        android:name="com.jp.pechaydetect.ui.historydetail.ScanDetailFragment"
+        android:label="Scan Details"
+        tools:layout="@layout/fragment_scan_detail">
+        <argument
+            android:name="scanId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_scanDetailFragment_to_fertilizerFragment"
+            app:destination="@id/fertilizerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+</navigation>

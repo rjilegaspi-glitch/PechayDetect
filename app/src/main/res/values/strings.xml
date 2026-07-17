@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand -->
+    <string name="app_name">PechayDetect</string>
+    <string name="splash_tagline">Pechay Nutrient Deficiency Detector</string>
+
+    <!-- Navigation labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_library">Library</string>
+    <string name="nav_history">History</string>
+
+    <!-- Home screen -->
+    <string name="home_greeting">Welcome to</string>
+    <string name="home_subtitle">Detect pechay nutrient deficiencies with AI</string>
+    <string name="total_scans">Total Scans</string>
+    <string name="last_scan_result">Last scan: %1$s</string>
+    <string name="no_scans_yet">No scans yet.\nTap "Scan Leaf" to start.</string>
+    <string name="scan_leaf">📷 Scan Leaf</string>
+    <string name="view_history">View Scan History</string>
+    <string name="nutrient_library">Nutrient Library</string>
+
+    <!-- Camera screen -->
+    <string name="camera_hint">Center the leaf within the frame</string>
+    <string name="camera_permission_required">Camera permission is required to scan leaves. Please grant it in Settings.</string>
+    <string name="select_from_gallery">Select from Gallery</string>
+    <string name="capture_photo">Capture Photo</string>
+    <string name="flip_camera">Flip Camera</string>
+
+    <!-- Image preview -->
+    <string name="captured_image">Captured leaf image</string>
+    <string name="retake">Retake</string>
+    <string name="analyze">Analyze</string>
+
+    <!-- Analysis -->
+    <string name="analyzing">Analyzing leaf…</string>
+
+    <!-- Result screen -->
+    <string name="scanned_leaf">Scanned leaf</string>
+    <string name="confidence_format">Confidence: %1$d%%</string>
+    <string name="quick_action">Recommended Action</string>
+    <string name="view_fertilizer_recs">View Fertilizer Recommendations</string>
+    <string name="scan_again">Scan Another Leaf</string>
+    <string name="uncertain_result">Low Confidence — Uncertain</string>
+    <string name="ood_message">Image may not show a pechay leaf clearly. Please retake with better lighting and framing.</string>
+
+    <!-- Fertilizer screen -->
+    <string name="fertilizer_steps">Fertilizer Application Steps</string>
+    <string name="cultural_practices">Cultural Management Practices</string>
+    <string name="notes">Notes</string>
+    <string name="da_source">Source — Philippine Department of Agriculture (DA)</string>
+    <string name="no_recommendation">No recommendation available for this class.</string>
+
+    <!-- Nutrient library -->
+    <string name="nutrient_icon">Nutrient icon</string>
+    <string name="role_label">Role in Pechay</string>
+    <string name="deficiency_symptoms_label">Deficiency Symptoms</string>
+    <string name="affected_parts_label">Affected Parts</string>
+
+    <!-- History screen -->
+    <string name="no_scan_history">No scan history yet.\nScan a pechay leaf to get started!</string>
+    <string name="scan_thumbnail">Scan thumbnail</string>
+
+    <!-- Scan detail screen -->
+    <string name="delete_scan">Delete This Scan</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_illustration">Onboarding illustration</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+
+    <!-- Status colors (accessibility labels) -->
+    <string name="status_healthy">Healthy</string>
+    <string name="status_nitrogen">Nitrogen Deficiency</string>
+    <string name="status_phosphorus">Phosphorus Deficiency</string>
+    <string name="status_potassium">Potassium Deficiency</string>
+    <string name="status_unknown">Uncertain / Unknown</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Healthy leaf icon — green -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M24,4 C24,4 12,14 12,26 C12,35 17,40 24,42 C31,40 36,35 36,26 C36,14 24,4 24,4 Z" />
+    <path
+        android:strokeColor="#A5D6A7"
+        android:strokeWidth="1.5"
+        android:pathData="M24,10 L24,38 M18,22 C18,22 16,30 18,36 M30,22 C30,22 32,30 30,36" />
+</vector>
