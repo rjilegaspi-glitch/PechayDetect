@@ -1,1 +1,0 @@
-PLACEHOLDER: Replace this file with the trained pechay_model.tflite from the Colab notebook. Expected input: [1,224,224,3] float32, output: [1,4] softmax.

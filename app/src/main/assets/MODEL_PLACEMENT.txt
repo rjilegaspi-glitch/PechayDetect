@@ -1,0 +1,13 @@
+PLACE MODEL FILE HERE
+=====================
+File expected: pechay_model.tflite
+
+Input:  [1, 224, 224, 3] float32 — normalized with (pixel / 127.5) - 1.0
+Output: [1, 4] float32 softmax  — classes: Healthy, Nitrogen, Phosphorus, Potassium
+
+Export your trained model from the Colab notebook:
+  notebooks/MobileNetV2_PechayDetect.ipynb
+  notebooks/MobileNetV3_PechayDetect.ipynb
+
+Recommended format: Float16 quantized TFLite (best size/accuracy balance).
+See docs/model_comparison_report.md for guidance on which model to deploy.
