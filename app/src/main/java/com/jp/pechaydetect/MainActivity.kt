@@ -4,8 +4,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.jp.pechaydetect.databinding.ActivityMainBinding
@@ -25,14 +23,6 @@ class MainActivity : AppCompatActivity() {
         navController = navHostFragment.navController
 
         val bottomNav: BottomNavigationView = binding.bottomNavigation
-        val appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.homeFragment,
-                R.id.nutrientLibraryFragment,
-                R.id.scanHistoryFragment
-            )
-        )
-        setupActionBarWithNavController(navController, appBarConfiguration)
         bottomNav.setupWithNavController(navController)
 
         // Show/hide bottom nav based on destination
