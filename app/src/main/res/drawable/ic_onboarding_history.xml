@@ -5,18 +5,18 @@
     android:height="220dp"
     android:viewportWidth="220"
     android:viewportHeight="220">
-    <rect android:fillColor="#E8F5E9" android:x="30" android:y="40"
-        android:width="160" android:height="140" android:rx="12" />
-    <rect android:fillColor="#FFFFFF" android:x="44" android:y="60"
-        android:width="132" android:height="28" android:rx="6" />
-    <rect android:fillColor="#FFFFFF" android:x="44" android:y="98"
-        android:width="132" android:height="28" android:rx="6" />
-    <rect android:fillColor="#FFFFFF" android:x="44" android:y="136"
-        android:width="132" android:height="28" android:rx="6" />
-    <rect android:fillColor="#2E7D32" android:x="44" android:y="60"
-        android:width="8" android:height="28" android:rx="4" />
-    <rect android:fillColor="#F57C00" android:x="44" android:y="98"
-        android:width="8" android:height="28" android:rx="4" />
-    <rect android:fillColor="#7B1FA2" android:x="44" android:y="136"
-        android:width="8" android:height="28" android:rx="4" />
+    <rect android:fillColor="#E8F5E9" android:x="30dp" android:y="40dp"
+        android:width="160dp" android:height="140dp" />
+    <rect android:fillColor="#FFFFFF" android:x="44dp" android:y="60dp"
+        android:width="132dp" android:height="28dp" />
+    <rect android:fillColor="#FFFFFF" android:x="44dp" android:y="98dp"
+        android:width="132dp" android:height="28dp" />
+    <rect android:fillColor="#FFFFFF" android:x="44dp" android:y="136dp"
+        android:width="132dp" android:height="28dp" />
+    <rect android:fillColor="#2E7D32" android:x="44dp" android:y="60dp"
+        android:width="8dp" android:height="28dp" />
+    <rect android:fillColor="#F57C00" android:x="44dp" android:y="98dp"
+        android:width="8dp" android:height="28dp" />
+    <rect android:fillColor="#7B1FA2" android:x="44dp" android:y="136dp"
+        android:width="8dp" android:height="28dp" />
 </vector>
