@@ -12,7 +12,4 @@
         android:strokeColor="#FFFFFF"
         android:strokeWidth="1.5"
         android:pathData="M24,10 L24,38" />
-    <text android:x="17" android:y="28"
-        android:fillColor="#FFFFFF"
-        android:textSize="10sp">N</text>
 </vector>
